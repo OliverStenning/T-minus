@@ -4,7 +4,7 @@ import SwiftUI
 struct T_minusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

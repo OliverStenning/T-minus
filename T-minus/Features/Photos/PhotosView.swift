@@ -2,7 +2,10 @@ import SwiftUI
 
 struct PhotosView: View {
     var body: some View {
-        Text("Hello, Photos!")
+        NavigationView {
+            Text("Hello, Photos!")
+                .navigationTitle("Photos")
+        }
     }
 }
 

@@ -2,7 +2,10 @@ import SwiftUI
 
 struct RocketsView: View {
     var body: some View {
-        Text("Hello, Rockets!")
+        NavigationView {
+            Text("Hello, Rockets!")
+                .navigationTitle("Rockets")
+        }
     }
 }
 

@@ -2,7 +2,10 @@ import SwiftUI
 
 struct LaunchesView: View {
     var body: some View {
-        Text("Hello, Launches!")
+        NavigationView {
+            Text("Hello, Launches!")
+                .navigationTitle("Launches")
+        }
     }
 }
 

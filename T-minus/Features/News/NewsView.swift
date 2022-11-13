@@ -2,7 +2,10 @@ import SwiftUI
 
 struct NewsView: View {
     var body: some View {
-        Text("Hello, News!")
+        NavigationView {
+            Text("Hello, News!")
+                .navigationTitle("News")
+        }
     }
 }
 

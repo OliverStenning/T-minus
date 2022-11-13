@@ -1,36 +1,35 @@
 import SwiftUI
+import Launches
+import News
+import Rockets
+import Photos
 
 struct AppView: View {
     var body: some View {
         TabView {
             LaunchesView()
-                .tabItem {
-                    Image("launches")
-                        .renderingMode(.template)
-                    Text("Launches")
-                }
+                .tabItem { TabViewLabel(text: "Launches", image: "launches") }
             
             NewsView()
-                .tabItem {
-                    Image("news")
-                        .renderingMode(.template)
-                    Text("News")
-                }
+                .tabItem { TabViewLabel(text: "News", image: "news") }
             
             RocketsView()
-                .tabItem {
-                    Image("rocket")
-                        .renderingMode(.template)
-                    Text("Rockets")
-                }
+                .tabItem { TabViewLabel(text: "Rockets", image: "rockets") }
             
             PhotosView()
-                .tabItem {
-                    Image("photos")
-                        .renderingMode(.template)
-                    Text("Photos")
-                }
+                .tabItem { TabViewLabel(text: "Photos", image: "photos") }
         }
+    }
+}
+
+struct TabViewLabel: View {
+    let text: String
+    let image: String
+    
+    var body: some View {
+        Image(image)
+            .renderingMode(.template)
+        Text(text)
     }
 }
 

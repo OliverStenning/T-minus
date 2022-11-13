@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		7FD695B1D98C6740C623729F /* Pods_T_minus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B52BB334679C53E12432419 /* Pods_T_minus.framework */; };
 		F218B4D1292046EC005DFF58 /* T_minusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218B4D0292046EC005DFF58 /* T_minusApp.swift */; };
-		F218B4D3292046EC005DFF58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218B4D2292046EC005DFF58 /* ContentView.swift */; };
 		F218B4D5292046EE005DFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218B4D4292046EE005DFF58 /* Assets.xcassets */; };
 		F218B4D8292046EE005DFF58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218B4D7292046EE005DFF58 /* Preview Assets.xcassets */; };
 		F2DBD9FF292054E20052D68F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD9FE292054E20052D68F /* AppView.swift */; };
-		F2DBDA0829205D8B0052D68F /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBDA0729205D8B0052D68F /* LaunchesView.swift */; };
-		F2DBDA0B29205DA00052D68F /* RocketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBDA0A29205DA00052D68F /* RocketsView.swift */; };
-		F2DBDA0D29205DAE0052D68F /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBDA0C29205DAE0052D68F /* NewsView.swift */; };
-		F2DBDA0F29205DB80052D68F /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBDA0E29205DB80052D68F /* PhotosView.swift */; };
+		F2DBDA1E292078480052D68F /* Launches in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA1D292078480052D68F /* Launches */; };
+		F2DBDA20292078540052D68F /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA1F292078540052D68F /* Networking */; };
+		F2DBDA22292078540052D68F /* News in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA21292078540052D68F /* News */; };
+		F2DBDA24292078540052D68F /* Photos in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA23292078540052D68F /* Photos */; };
+		F2DBDA26292078540052D68F /* RaptorUI in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA25292078540052D68F /* RaptorUI */; };
+		F2DBDA28292078540052D68F /* Rockets in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA27292078540052D68F /* Rockets */; };
+		F2DBDA2A292078550052D68F /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA29292078550052D68F /* Utilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,14 +27,17 @@
 		E5DD99C9428009ABCCF0621B /* Pods-T-minus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T-minus.debug.xcconfig"; path = "Target Support Files/Pods-T-minus/Pods-T-minus.debug.xcconfig"; sourceTree = "<group>"; };
 		F218B4CD292046EC005DFF58 /* T-minus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-minus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F218B4D0292046EC005DFF58 /* T_minusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_minusApp.swift; sourceTree = "<group>"; };
-		F218B4D2292046EC005DFF58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F218B4D4292046EE005DFF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F218B4D7292046EE005DFF58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F268FBEE292080D3002DA8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F2DBD9FE292054E20052D68F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		F2DBDA0729205D8B0052D68F /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
-		F2DBDA0A29205DA00052D68F /* RocketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsView.swift; sourceTree = "<group>"; };
-		F2DBDA0C29205DAE0052D68F /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
-		F2DBDA0E29205DB80052D68F /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		F2DBDA13292076C40052D68F /* Launches */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Launches; sourceTree = "<group>"; };
+		F2DBDA14292076E70052D68F /* Rockets */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Rockets; sourceTree = "<group>"; };
+		F2DBDA15292076F40052D68F /* News */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = News; sourceTree = "<group>"; };
+		F2DBDA16292077040052D68F /* Photos */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Photos; sourceTree = "<group>"; };
+		F2DBDA19292077380052D68F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
+		F2DBDA1B292077720052D68F /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		F2DBDA1C292077980052D68F /* RaptorUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RaptorUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +45,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2DBDA24292078540052D68F /* Photos in Frameworks */,
+				F2DBDA20292078540052D68F /* Networking in Frameworks */,
+				F2DBDA26292078540052D68F /* RaptorUI in Frameworks */,
+				F2DBDA22292078540052D68F /* News in Frameworks */,
 				7FD695B1D98C6740C623729F /* Pods_T_minus.framework in Frameworks */,
+				F2DBDA2A292078550052D68F /* Utilities in Frameworks */,
+				F2DBDA1E292078480052D68F /* Launches in Frameworks */,
+				F2DBDA28292078540052D68F /* Rockets in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				F218B4CF292046EC005DFF58 /* T-minus */,
+				F2DBDA12292076AD0052D68F /* Features */,
+				F2DBDA17292077100052D68F /* Common */,
+				F2DBDA18292077240052D68F /* Core */,
 				5FBE1908464B11753142007F /* Pods */,
 				D07E37793D4F8EE1082B8596 /* Frameworks */,
 			);
@@ -85,10 +100,9 @@
 		F218B4CF292046EC005DFF58 /* T-minus */ = {
 			isa = PBXGroup;
 			children = (
-				F2DBDA0229205D600052D68F /* Features */,
+				F268FBEE292080D3002DA8F8 /* Info.plist */,
 				F2DBDA01292055030052D68F /* App */,
 				F2DBDA00292054F50052D68F /* Resources */,
-				F218B4D2292046EC005DFF58 /* ContentView.swift */,
 				F218B4D6292046EE005DFF58 /* Preview Content */,
 				F218B4CE292046EC005DFF58 /* Products */,
 			);
@@ -120,47 +134,32 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		F2DBDA0229205D600052D68F /* Features */ = {
+		F2DBDA12292076AD0052D68F /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				F2DBDA0629205D7A0052D68F /* Photos */,
-				F2DBDA0529205D740052D68F /* News */,
-				F2DBDA0429205D6E0052D68F /* Rockets */,
-				F2DBDA0329205D660052D68F /* Launches */,
+				F2DBDA13292076C40052D68F /* Launches */,
+				F2DBDA15292076F40052D68F /* News */,
+				F2DBDA16292077040052D68F /* Photos */,
+				F2DBDA14292076E70052D68F /* Rockets */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		F2DBDA0329205D660052D68F /* Launches */ = {
+		F2DBDA17292077100052D68F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F2DBDA0729205D8B0052D68F /* LaunchesView.swift */,
+				F2DBDA1C292077980052D68F /* RaptorUI */,
+				F2DBDA1B292077720052D68F /* Networking */,
 			);
-			path = Launches;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		F2DBDA0429205D6E0052D68F /* Rockets */ = {
+		F2DBDA18292077240052D68F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F2DBDA0A29205DA00052D68F /* RocketsView.swift */,
+				F2DBDA19292077380052D68F /* Utilities */,
 			);
-			path = Rockets;
-			sourceTree = "<group>";
-		};
-		F2DBDA0529205D740052D68F /* News */ = {
-			isa = PBXGroup;
-			children = (
-				F2DBDA0C29205DAE0052D68F /* NewsView.swift */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		F2DBDA0629205D7A0052D68F /* Photos */ = {
-			isa = PBXGroup;
-			children = (
-				F2DBDA0E29205DB80052D68F /* PhotosView.swift */,
-			);
-			path = Photos;
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +180,15 @@
 			dependencies = (
 			);
 			name = "T-minus";
+			packageProductDependencies = (
+				F2DBDA1D292078480052D68F /* Launches */,
+				F2DBDA1F292078540052D68F /* Networking */,
+				F2DBDA21292078540052D68F /* News */,
+				F2DBDA23292078540052D68F /* Photos */,
+				F2DBDA25292078540052D68F /* RaptorUI */,
+				F2DBDA27292078540052D68F /* Rockets */,
+				F2DBDA29292078550052D68F /* Utilities */,
+			);
 			productName = "T-minus";
 			productReference = F218B4CD292046EC005DFF58 /* T-minus.app */;
 			productType = "com.apple.product-type.application";
@@ -277,13 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DBDA0B29205DA00052D68F /* RocketsView.swift in Sources */,
-				F218B4D3292046EC005DFF58 /* ContentView.swift in Sources */,
 				F2DBD9FF292054E20052D68F /* AppView.swift in Sources */,
-				F2DBDA0F29205DB80052D68F /* PhotosView.swift in Sources */,
-				F2DBDA0D29205DAE0052D68F /* NewsView.swift in Sources */,
 				F218B4D1292046EC005DFF58 /* T_minusApp.swift in Sources */,
-				F2DBDA0829205D8B0052D68F /* LaunchesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -394,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -416,10 +419,12 @@
 				DEVELOPMENT_TEAM = 36LYYU944F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "T-minus/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,10 +451,12 @@
 				DEVELOPMENT_TEAM = 36LYYU944F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "T-minus/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,6 +493,37 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2DBDA1D292078480052D68F /* Launches */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Launches;
+		};
+		F2DBDA1F292078540052D68F /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		F2DBDA21292078540052D68F /* News */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = News;
+		};
+		F2DBDA23292078540052D68F /* Photos */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Photos;
+		};
+		F2DBDA25292078540052D68F /* RaptorUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RaptorUI;
+		};
+		F2DBDA27292078540052D68F /* Rockets */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Rockets;
+		};
+		F2DBDA29292078550052D68F /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F218B4C5292046EC005DFF58 /* Project object */;
 }
