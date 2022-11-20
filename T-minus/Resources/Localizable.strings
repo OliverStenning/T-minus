@@ -1,0 +1,19 @@
+// MARK: Launches
+
+"Launches.title" = "Launches";
+"Launches.hello" = "Hello, Launches!";
+
+// MARK: News
+
+"News.title" = "News";
+"News.hello" = "Hello, News!";
+
+// MARK: Rockets
+
+"Rockets.title" = "Rockets";
+"Rockets.hello" = "Hello, Rockets!";
+
+// MARK: Photos
+
+"Photos.title" = "Photos";
+"Photos.hello" = "Hello, Photos!";

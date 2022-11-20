@@ -22,6 +22,10 @@
 		F29E551B2929B509008CEDD7 /* FontStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */; };
 		F29E551E2929B50D008CEDD7 /* Font+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E551D2929B50D008CEDD7 /* Font+UIFont.swift */; };
 		F29E55212929B511008CEDD7 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E55202929B511008CEDD7 /* FontBook.swift */; };
+		F29E55252929B70C008CEDD7 /* TabViewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E55242929B70C008CEDD7 /* TabViewLabel.swift */; };
+		F29E55282929C22C008CEDD7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F29E55272929C22C008CEDD7 /* Localizable.strings */; };
+		F29E552C2929C48D008CEDD7 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E552A2929C48D008CEDD7 /* XCAssets+Generated.swift */; };
+		F29E552D2929C48D008CEDD7 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E552B2929C48D008CEDD7 /* Strings+Generated.swift */; };
 		F2DBD9FF292054E20052D68F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD9FE292054E20052D68F /* AppView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontStyleModifier.swift; sourceTree = "<group>"; };
 		F29E551D2929B50D008CEDD7 /* Font+UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+UIFont.swift"; sourceTree = "<group>"; };
 		F29E55202929B511008CEDD7 /* FontBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
+		F29E55242929B70C008CEDD7 /* TabViewLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewLabel.swift; sourceTree = "<group>"; };
+		F29E55272929C22C008CEDD7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F29E552A2929C48D008CEDD7 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		F29E552B2929C48D008CEDD7 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		F2DBD9FE292054E20052D68F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +190,7 @@
 		F29E55172929B493008CEDD7 /* RaptorUI */ = {
 			isa = PBXGroup;
 			children = (
+				F29E55232929B6E0008CEDD7 /* Modifiers */,
 				F29E551F2929B511008CEDD7 /* Helpers */,
 				F29E551C2929B50D008CEDD7 /* Extensions */,
 				F29E55192929B509008CEDD7 /* Components */,
@@ -199,7 +208,7 @@
 		F29E55192929B509008CEDD7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */,
+				F29E55242929B70C008CEDD7 /* TabViewLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -220,11 +229,30 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		F29E55232929B6E0008CEDD7 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		F29E55292929C304008CEDD7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F29E552B2929C48D008CEDD7 /* Strings+Generated.swift */,
+				F29E552A2929C48D008CEDD7 /* XCAssets+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		F2DBDA00292054F50052D68F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F29E55292929C304008CEDD7 /* Generated */,
 				F29E54FD2929B40A008CEDD7 /* Fonts */,
 				F218B4D4292046EE005DFF58 /* Assets.xcassets */,
+				F29E55272929C22C008CEDD7 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -251,6 +279,7 @@
 				F218B4CA292046EC005DFF58 /* Frameworks */,
 				F218B4CB292046EC005DFF58 /* Resources */,
 				0C7724CF2D4202DA34B43D22 /* [CP] Embed Pods Frameworks */,
+				F29E55262929C12F008CEDD7 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -304,6 +333,7 @@
 				F29E550B2929B431008CEDD7 /* AtkinsonHyperlegible-Regular.ttf in Resources */,
 				F29E550A2929B431008CEDD7 /* AtkinsonHyperlegible-Italic.ttf in Resources */,
 				F29E550D2929B431008CEDD7 /* AtkinsonHyperlegible-BoldItalic.ttf in Resources */,
+				F29E55282929C22C008CEDD7 /* Localizable.strings in Resources */,
 				F218B4D8292046EE005DFF58 /* Preview Assets.xcassets in Resources */,
 				F218B4D5292046EE005DFF58 /* Assets.xcassets in Resources */,
 				F29E550C2929B431008CEDD7 /* AtkinsonHyperlegible-Bold.ttf in Resources */,
@@ -352,6 +382,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F29E55262929C12F008CEDD7 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -360,6 +408,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29E550F2929B458008CEDD7 /* LaunchesView.swift in Sources */,
+				F29E55252929B70C008CEDD7 /* TabViewLabel.swift in Sources */,
+				F29E552D2929C48D008CEDD7 /* Strings+Generated.swift in Sources */,
 				F29E55112929B468008CEDD7 /* NewsView.swift in Sources */,
 				F29E55132929B473008CEDD7 /* PhotosView.swift in Sources */,
 				F29E551E2929B50D008CEDD7 /* Font+UIFont.swift in Sources */,
@@ -368,6 +418,7 @@
 				F29E55152929B47E008CEDD7 /* RocketsView.swift in Sources */,
 				F218B4D1292046EC005DFF58 /* T_minusApp.swift in Sources */,
 				F29E55212929B511008CEDD7 /* FontBook.swift in Sources */,
+				F29E552C2929C48D008CEDD7 /* XCAssets+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

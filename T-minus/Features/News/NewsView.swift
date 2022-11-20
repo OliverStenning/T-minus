@@ -10,8 +10,15 @@ public struct NewsView: View {
     
     public var body: some View {
         NavigationView {
-            Text("Hello, News!")
-                .navigationTitle("News")
+            ZStack {
+                Color(Asset.Colors.backgroundColor.color)
+                    .edgesIgnoringSafeArea(.all)
+                
+                Text(L10n.News.hello)
+                    .fontStyle(.headline)
+                    .foregroundColor(Asset.Colors.textColor.swiftUIColor)
+            }
+            .navigationTitle(L10n.News.title)
         }
     }
 }

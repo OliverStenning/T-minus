@@ -6,7 +6,7 @@ struct AppView: View {
     
     init() {
         let fontStyle: FontStyle = .title
-        UINavigationBar.appearance().largeTitleTextAttributes = [.font: fontStyle.uiFont]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: fontStyle.uiFont, .foregroundColor: Asset.Colors.textColor.color]
     }
     
     // MARK: - Public
@@ -14,7 +14,7 @@ struct AppView: View {
     var body: some View {
         TabView {
             LaunchesView()
-                .tabItem { TabViewLabel(text: "Launches", image: "launches") }
+                .tabItem { TabViewLabel(text: L10n.Launches.title, image: "launches") }
             
             NewsView()
                 .tabItem { TabViewLabel(text: "News", image: "news") }
@@ -25,17 +25,6 @@ struct AppView: View {
             PhotosView()
                 .tabItem { TabViewLabel(text: "Photos", image: "photos") }
         }
-    }
-}
-
-struct TabViewLabel: View {
-    let text: String
-    let image: String
-    
-    var body: some View {
-        Image(image)
-            .renderingMode(.template)
-        Text(text)
     }
 }
 

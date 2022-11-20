@@ -10,8 +10,15 @@ public struct RocketsView: View {
     
     public var body: some View {
         NavigationView {
-            Text("Hello, Rockets!")
-                .navigationTitle("Rockets")
+            ZStack {
+                Color(Asset.Colors.backgroundColor.color)
+                    .edgesIgnoringSafeArea(.all)
+                
+                Text(L10n.Rockets.hello)
+                    .fontStyle(.headline)
+                    .foregroundColor(Asset.Colors.textColor.swiftUIColor)
+            }
+            .navigationTitle(L10n.Rockets.title)
         }
     }
 }

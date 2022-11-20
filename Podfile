@@ -9,5 +9,6 @@ target 'T-minus' do
 
   # Pods for T-minus
   pod 'Alamofire', '5.6.2', :inhibit_warnings => true
+  pod 'SwiftGen', '6.6.2'
 
 end

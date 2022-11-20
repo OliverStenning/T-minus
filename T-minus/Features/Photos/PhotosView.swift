@@ -10,8 +10,15 @@ public struct PhotosView: View {
     
     public var body: some View {
         NavigationView {
-            Text("Hello, Photos!")
-                .navigationTitle("Photos")
+            ZStack {
+                Color(Asset.Colors.backgroundColor.color)
+                    .edgesIgnoringSafeArea(.all)
+                
+                Text(L10n.Photos.hello)
+                    .fontStyle(.headline)
+                    .foregroundColor(Asset.Colors.textColor.swiftUIColor)
+            }
+            .navigationTitle(L10n.Photos.title)
         }
     }
 }
