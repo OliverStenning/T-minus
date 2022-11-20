@@ -107,7 +107,7 @@ private struct FontBook {
 
     private func loadCustomFonts() {
         for customFont in CustomFont.allCases {
-            guard let url = Bundle.module.url(forResource: customFont.fileName, withExtension: "ttf"),
+            guard let url = Bundle.main.url(forResource: customFont.fileName, withExtension: "ttf"),
                   let data = try? Data(contentsOf: url),
                   let provider = CGDataProvider(data: data as CFData),
                   let font = CGFont(provider)

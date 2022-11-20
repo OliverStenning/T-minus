@@ -1,7 +1,14 @@
 import SwiftUI
 
-struct NewsView: View {
-    var body: some View {
+public struct NewsView: View {
+    
+    // MARK: - Lifecycle
+    
+    public init() {}
+    
+    // MARK: - Public
+    
+    public var body: some View {
         NavigationView {
             Text("Hello, News!")
                 .navigationTitle("News")

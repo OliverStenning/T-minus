@@ -1,9 +1,19 @@
 import SwiftUI
 
-struct LaunchesView: View {
-    var body: some View {
+public struct LaunchesView: View {
+    
+    // MARK: - Lifecycle
+    
+    public init() {
+        
+    }
+    
+    // MARK: - Public
+    
+    public var body: some View {
         NavigationView {
             Text("Hello, Launches!")
+                .fontStyle(.headline)
                 .navigationTitle("Launches")
         }
     }

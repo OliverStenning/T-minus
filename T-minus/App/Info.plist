@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Resouces/Fonts/AtkinsonHyperlegible-Bold.ttf</string>
+		<string>Resources/Fonts/AtkinsonHyperlegible-BoldItalic.ttf</string>
+		<string>Resources/Fonts/AtkinsonHyperlegible-Italic.ttf</string>
+		<string>Resources/Fonts/AtkinsonHyperlegible-Regular.ttf</string>
+	</array>
+</dict>
+</plist>

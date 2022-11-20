@@ -1,10 +1,16 @@
 import SwiftUI
-import Launches
-import News
-import Rockets
-import Photos
 
 struct AppView: View {
+    
+    // MARK: - Lifecycle
+    
+    init() {
+        let fontStyle: FontStyle = .title
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: fontStyle.uiFont]
+    }
+    
+    // MARK: - Public
+    
     var body: some View {
         TabView {
             LaunchesView()

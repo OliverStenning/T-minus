@@ -11,14 +11,18 @@
 		F218B4D1292046EC005DFF58 /* T_minusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218B4D0292046EC005DFF58 /* T_minusApp.swift */; };
 		F218B4D5292046EE005DFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218B4D4292046EE005DFF58 /* Assets.xcassets */; };
 		F218B4D8292046EE005DFF58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218B4D7292046EE005DFF58 /* Preview Assets.xcassets */; };
+		F29E550A2929B431008CEDD7 /* AtkinsonHyperlegible-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29E55062929B431008CEDD7 /* AtkinsonHyperlegible-Italic.ttf */; };
+		F29E550B2929B431008CEDD7 /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29E55072929B431008CEDD7 /* AtkinsonHyperlegible-Regular.ttf */; };
+		F29E550C2929B431008CEDD7 /* AtkinsonHyperlegible-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29E55082929B431008CEDD7 /* AtkinsonHyperlegible-Bold.ttf */; };
+		F29E550D2929B431008CEDD7 /* AtkinsonHyperlegible-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29E55092929B431008CEDD7 /* AtkinsonHyperlegible-BoldItalic.ttf */; };
+		F29E550F2929B458008CEDD7 /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E550E2929B458008CEDD7 /* LaunchesView.swift */; };
+		F29E55112929B468008CEDD7 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E55102929B468008CEDD7 /* NewsView.swift */; };
+		F29E55132929B473008CEDD7 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E55122929B473008CEDD7 /* PhotosView.swift */; };
+		F29E55152929B47E008CEDD7 /* RocketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E55142929B47E008CEDD7 /* RocketsView.swift */; };
+		F29E551B2929B509008CEDD7 /* FontStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */; };
+		F29E551E2929B50D008CEDD7 /* Font+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E551D2929B50D008CEDD7 /* Font+UIFont.swift */; };
+		F29E55212929B511008CEDD7 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E55202929B511008CEDD7 /* FontBook.swift */; };
 		F2DBD9FF292054E20052D68F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD9FE292054E20052D68F /* AppView.swift */; };
-		F2DBDA1E292078480052D68F /* Launches in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA1D292078480052D68F /* Launches */; };
-		F2DBDA20292078540052D68F /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA1F292078540052D68F /* Networking */; };
-		F2DBDA22292078540052D68F /* News in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA21292078540052D68F /* News */; };
-		F2DBDA24292078540052D68F /* Photos in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA23292078540052D68F /* Photos */; };
-		F2DBDA26292078540052D68F /* RaptorUI in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA25292078540052D68F /* RaptorUI */; };
-		F2DBDA28292078540052D68F /* Rockets in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA27292078540052D68F /* Rockets */; };
-		F2DBDA2A292078550052D68F /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = F2DBDA29292078550052D68F /* Utilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,15 +33,19 @@
 		F218B4D0292046EC005DFF58 /* T_minusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_minusApp.swift; sourceTree = "<group>"; };
 		F218B4D4292046EE005DFF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F218B4D7292046EE005DFF58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F268FBEE292080D3002DA8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F268FBEE292080D3002DA8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29E55062929B431008CEDD7 /* AtkinsonHyperlegible-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Italic.ttf"; sourceTree = "<group>"; };
+		F29E55072929B431008CEDD7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
+		F29E55082929B431008CEDD7 /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
+		F29E55092929B431008CEDD7 /* AtkinsonHyperlegible-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F29E550E2929B458008CEDD7 /* LaunchesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
+		F29E55102929B468008CEDD7 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		F29E55122929B473008CEDD7 /* PhotosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		F29E55142929B47E008CEDD7 /* RocketsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketsView.swift; sourceTree = "<group>"; };
+		F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontStyleModifier.swift; sourceTree = "<group>"; };
+		F29E551D2929B50D008CEDD7 /* Font+UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+UIFont.swift"; sourceTree = "<group>"; };
+		F29E55202929B511008CEDD7 /* FontBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
 		F2DBD9FE292054E20052D68F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		F2DBDA13292076C40052D68F /* Launches */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Launches; sourceTree = "<group>"; };
-		F2DBDA14292076E70052D68F /* Rockets */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Rockets; sourceTree = "<group>"; };
-		F2DBDA15292076F40052D68F /* News */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = News; sourceTree = "<group>"; };
-		F2DBDA16292077040052D68F /* Photos */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Photos; sourceTree = "<group>"; };
-		F2DBDA19292077380052D68F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
-		F2DBDA1B292077720052D68F /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
-		F2DBDA1C292077980052D68F /* RaptorUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RaptorUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,14 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DBDA24292078540052D68F /* Photos in Frameworks */,
-				F2DBDA20292078540052D68F /* Networking in Frameworks */,
-				F2DBDA26292078540052D68F /* RaptorUI in Frameworks */,
-				F2DBDA22292078540052D68F /* News in Frameworks */,
 				7FD695B1D98C6740C623729F /* Pods_T_minus.framework in Frameworks */,
-				F2DBDA2A292078550052D68F /* Utilities in Frameworks */,
-				F2DBDA1E292078480052D68F /* Launches in Frameworks */,
-				F2DBDA28292078540052D68F /* Rockets in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				F218B4CF292046EC005DFF58 /* T-minus */,
-				F2DBDA12292076AD0052D68F /* Features */,
-				F2DBDA17292077100052D68F /* Common */,
-				F2DBDA18292077240052D68F /* Core */,
 				5FBE1908464B11753142007F /* Pods */,
 				D07E37793D4F8EE1082B8596 /* Frameworks */,
 			);
@@ -100,11 +98,14 @@
 		F218B4CF292046EC005DFF58 /* T-minus */ = {
 			isa = PBXGroup;
 			children = (
-				F268FBEE292080D3002DA8F8 /* Info.plist */,
 				F2DBDA01292055030052D68F /* App */,
-				F2DBDA00292054F50052D68F /* Resources */,
+				F29E54F02929B301008CEDD7 /* Features */,
+				F29E55162929B48B008CEDD7 /* Networking */,
 				F218B4D6292046EE005DFF58 /* Preview Content */,
 				F218B4CE292046EC005DFF58 /* Products */,
+				F29E55172929B493008CEDD7 /* RaptorUI */,
+				F2DBDA00292054F50052D68F /* Resources */,
+				F29E55182929B49D008CEDD7 /* Utilities */,
 			);
 			path = "T-minus";
 			sourceTree = "<group>";
@@ -117,9 +118,112 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F29E54F02929B301008CEDD7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F29E54F12929B3B1008CEDD7 /* Launches */,
+				F29E54F22929B3B9008CEDD7 /* News */,
+				F29E54F42929B3C3008CEDD7 /* Photos */,
+				F29E54F32929B3BE008CEDD7 /* Rockets */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F29E54F12929B3B1008CEDD7 /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				F29E550E2929B458008CEDD7 /* LaunchesView.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		F29E54F22929B3B9008CEDD7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F29E55102929B468008CEDD7 /* NewsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F29E54F32929B3BE008CEDD7 /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+				F29E55142929B47E008CEDD7 /* RocketsView.swift */,
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		F29E54F42929B3C3008CEDD7 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				F29E55122929B473008CEDD7 /* PhotosView.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		F29E54FD2929B40A008CEDD7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F29E55082929B431008CEDD7 /* AtkinsonHyperlegible-Bold.ttf */,
+				F29E55092929B431008CEDD7 /* AtkinsonHyperlegible-BoldItalic.ttf */,
+				F29E55062929B431008CEDD7 /* AtkinsonHyperlegible-Italic.ttf */,
+				F29E55072929B431008CEDD7 /* AtkinsonHyperlegible-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F29E55162929B48B008CEDD7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F29E55172929B493008CEDD7 /* RaptorUI */ = {
+			isa = PBXGroup;
+			children = (
+				F29E551F2929B511008CEDD7 /* Helpers */,
+				F29E551C2929B50D008CEDD7 /* Extensions */,
+				F29E55192929B509008CEDD7 /* Components */,
+			);
+			path = RaptorUI;
+			sourceTree = "<group>";
+		};
+		F29E55182929B49D008CEDD7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F29E55192929B509008CEDD7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F29E551A2929B509008CEDD7 /* FontStyleModifier.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F29E551C2929B50D008CEDD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F29E551D2929B50D008CEDD7 /* Font+UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F29E551F2929B511008CEDD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F29E55202929B511008CEDD7 /* FontBook.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F2DBDA00292054F50052D68F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F29E54FD2929B40A008CEDD7 /* Fonts */,
 				F218B4D4292046EE005DFF58 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -128,38 +232,11 @@
 		F2DBDA01292055030052D68F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				F268FBEE292080D3002DA8F8 /* Info.plist */,
 				F218B4D0292046EC005DFF58 /* T_minusApp.swift */,
 				F2DBD9FE292054E20052D68F /* AppView.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		F2DBDA12292076AD0052D68F /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				F2DBDA13292076C40052D68F /* Launches */,
-				F2DBDA15292076F40052D68F /* News */,
-				F2DBDA16292077040052D68F /* Photos */,
-				F2DBDA14292076E70052D68F /* Rockets */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		F2DBDA17292077100052D68F /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F2DBDA1C292077980052D68F /* RaptorUI */,
-				F2DBDA1B292077720052D68F /* Networking */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		F2DBDA18292077240052D68F /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				F2DBDA19292077380052D68F /* Utilities */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,13 +258,6 @@
 			);
 			name = "T-minus";
 			packageProductDependencies = (
-				F2DBDA1D292078480052D68F /* Launches */,
-				F2DBDA1F292078540052D68F /* Networking */,
-				F2DBDA21292078540052D68F /* News */,
-				F2DBDA23292078540052D68F /* Photos */,
-				F2DBDA25292078540052D68F /* RaptorUI */,
-				F2DBDA27292078540052D68F /* Rockets */,
-				F2DBDA29292078550052D68F /* Utilities */,
 			);
 			productName = "T-minus";
 			productReference = F218B4CD292046EC005DFF58 /* T-minus.app */;
@@ -231,8 +301,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29E550B2929B431008CEDD7 /* AtkinsonHyperlegible-Regular.ttf in Resources */,
+				F29E550A2929B431008CEDD7 /* AtkinsonHyperlegible-Italic.ttf in Resources */,
+				F29E550D2929B431008CEDD7 /* AtkinsonHyperlegible-BoldItalic.ttf in Resources */,
 				F218B4D8292046EE005DFF58 /* Preview Assets.xcassets in Resources */,
 				F218B4D5292046EE005DFF58 /* Assets.xcassets in Resources */,
+				F29E550C2929B431008CEDD7 /* AtkinsonHyperlegible-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29E550F2929B458008CEDD7 /* LaunchesView.swift in Sources */,
+				F29E55112929B468008CEDD7 /* NewsView.swift in Sources */,
+				F29E55132929B473008CEDD7 /* PhotosView.swift in Sources */,
+				F29E551E2929B50D008CEDD7 /* Font+UIFont.swift in Sources */,
 				F2DBD9FF292054E20052D68F /* AppView.swift in Sources */,
+				F29E551B2929B509008CEDD7 /* FontStyleModifier.swift in Sources */,
+				F29E55152929B47E008CEDD7 /* RocketsView.swift in Sources */,
 				F218B4D1292046EC005DFF58 /* T_minusApp.swift in Sources */,
+				F29E55212929B511008CEDD7 /* FontBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +500,7 @@
 				DEVELOPMENT_TEAM = 36LYYU944F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "T-minus/Info.plist";
+				INFOPLIST_FILE = "T-minus/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,7 +532,7 @@
 				DEVELOPMENT_TEAM = 36LYYU944F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "T-minus/Info.plist";
+				INFOPLIST_FILE = "T-minus/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,37 +574,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F2DBDA1D292078480052D68F /* Launches */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Launches;
-		};
-		F2DBDA1F292078540052D68F /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
-		};
-		F2DBDA21292078540052D68F /* News */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = News;
-		};
-		F2DBDA23292078540052D68F /* Photos */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Photos;
-		};
-		F2DBDA25292078540052D68F /* RaptorUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RaptorUI;
-		};
-		F2DBDA27292078540052D68F /* Rockets */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Rockets;
-		};
-		F2DBDA29292078550052D68F /* Utilities */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Utilities;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F218B4C5292046EC005DFF58 /* Project object */;
 }

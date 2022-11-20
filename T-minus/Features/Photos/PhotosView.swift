@@ -1,7 +1,14 @@
 import SwiftUI
 
-struct PhotosView: View {
-    var body: some View {
+public struct PhotosView: View {
+    
+    // MARK: - Lifecycle
+    
+    public init() {}
+    
+    // MARK: - Public
+    
+    public var body: some View {
         NavigationView {
             Text("Hello, Photos!")
                 .navigationTitle("Photos")
