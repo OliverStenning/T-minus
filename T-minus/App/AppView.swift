@@ -12,19 +12,7 @@ struct AppView: View {
     // MARK: - Public
     
     var body: some View {
-        TabView {
-            LaunchesView()
-                .tabItem { TabViewLabel(text: L10n.Launches.title, image: "launches") }
-            
-            NewsView()
-                .tabItem { TabViewLabel(text: "News", image: "news") }
-            
-            RocketsView()
-                .tabItem { TabViewLabel(text: "Rockets", image: "rockets") }
-            
-            PhotosView()
-                .tabItem { TabViewLabel(text: "Photos", image: "photos") }
-        }
+        RecentLaunchView()
     }
 }
 

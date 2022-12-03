@@ -42,6 +42,9 @@ public struct FontDescription {
 // MARK: - CustomFont
 
 public enum CustomFont: CaseIterable {
+    case archivoRegular
+    case archivoMedium
+    case archivoSemiBold
     case atkinsonHyperlegibleRegular
     case atkinsonHyperlegibleBold
     case atkinsonHyperlegibleItalic
@@ -51,6 +54,9 @@ public enum CustomFont: CaseIterable {
 
     public var fontName: String {
         switch self {
+            case .archivoRegular: return "Archivo-Regular"
+            case .archivoMedium: return "Archivo-Medium"
+            case .archivoSemiBold: return "Archivo-SemiBold"
             case .atkinsonHyperlegibleRegular: return "AtkinsonHyperlegible-Regular"
             case .atkinsonHyperlegibleBold: return "AtkinsonHyperlegible-Bold"
             case .atkinsonHyperlegibleItalic: return "AtkinsonHyperlegible-Italic"
@@ -62,6 +68,9 @@ public enum CustomFont: CaseIterable {
 
     var fileName: String {
         switch self {
+            case .archivoRegular: return "Archivo-Regular"
+            case .archivoMedium: return "Archivo-Medium"
+            case .archivoSemiBold: return "Archivo-SemiBold"
             case .atkinsonHyperlegibleRegular: return "AtkinsonHyperlegible-Regular"
             case .atkinsonHyperlegibleBold: return "AtkinsonHyperlegible-Bold"
             case .atkinsonHyperlegibleItalic: return "AtkinsonHyperlegible-Italic"
@@ -73,7 +82,7 @@ public enum CustomFont: CaseIterable {
 
 // MARK: - FontBook
 
-private struct FontBook {
+struct FontBook {
 
     // MARK: - Lifecycle
 
@@ -85,13 +94,13 @@ private struct FontBook {
 
     static let shared = FontBook()
 
-//    public func font(for customFont: CustomFont, size: CGFloat) -> UIFont {
-//        guard let customFont = UIFont(name: customFont.fontName, size: size) else {
-//            assertionFailure("Unable to load preferred font")
-//            return UIFont.systemFont(ofSize: size)
-//        }
-//        return customFont
-//    }
+    func font(for customFont: CustomFont, size: CGFloat) -> UIFont {
+        guard let customFont = UIFont(name: customFont.fontName, size: size) else {
+            assertionFailure("Unable to load preferred font")
+            return UIFont.systemFont(ofSize: size)
+        }
+        return customFont
+    }
     
     func font(for fontStyle: FontStyle, scaleFontDynamically: Bool = true) -> UIFont {
         guard let defaultFont = UIFont(name: fontStyle.description.font.fontName, size: fontStyle.description.size) else {

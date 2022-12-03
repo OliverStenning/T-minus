@@ -4,10 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Resouces/Fonts/AtkinsonHyperlegible-Bold.ttf</string>
-		<string>Resources/Fonts/AtkinsonHyperlegible-BoldItalic.ttf</string>
-		<string>Resources/Fonts/AtkinsonHyperlegible-Italic.ttf</string>
-		<string>Resources/Fonts/AtkinsonHyperlegible-Regular.ttf</string>
+		<string>Resources/Fonts/Archivo-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
