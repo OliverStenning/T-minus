@@ -11,6 +11,7 @@
 		F218B4D1292046EC005DFF58 /* T_minusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218B4D0292046EC005DFF58 /* T_minusApp.swift */; };
 		F218B4D5292046EE005DFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218B4D4292046EE005DFF58 /* Assets.xcassets */; };
 		F218B4D8292046EE005DFF58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218B4D7292046EE005DFF58 /* Preview Assets.xcassets */; };
+		F241DA63293B9C60004E8F23 /* UpcomingLaunchVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241DA62293B9C60004E8F23 /* UpcomingLaunchVIew.swift */; };
 		F29853BE293AD203005DB332 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29853BB293AD203005DB332 /* Archivo-Regular.ttf */; };
 		F29853BF293AD203005DB332 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29853BC293AD203005DB332 /* Archivo-SemiBold.ttf */; };
 		F29853C0293AD203005DB332 /* Archivo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29853BD293AD203005DB332 /* Archivo-Medium.ttf */; };
@@ -37,6 +38,7 @@
 		F218B4D0292046EC005DFF58 /* T_minusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_minusApp.swift; sourceTree = "<group>"; };
 		F218B4D4292046EE005DFF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F218B4D7292046EE005DFF58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F241DA62293B9C60004E8F23 /* UpcomingLaunchVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchVIew.swift; sourceTree = "<group>"; };
 		F29853BB293AD203005DB332 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Regular.ttf"; sourceTree = "<group>"; };
 		F29853BC293AD203005DB332 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBold.ttf"; sourceTree = "<group>"; };
 		F29853BD293AD203005DB332 /* Archivo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Medium.ttf"; sourceTree = "<group>"; };
@@ -125,9 +127,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F241DA61293B9621004E8F23 /* UpcomingLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				F241DA62293B9C60004E8F23 /* UpcomingLaunchVIew.swift */,
+			);
+			path = UpcomingLaunch;
+			sourceTree = "<group>";
+		};
 		F29E54F02929B301008CEDD7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F241DA61293B9621004E8F23 /* UpcomingLaunch */,
 				F29E54F12929B3B1008CEDD7 /* RecentLaunch */,
 			);
 			path = Features;
@@ -387,6 +398,7 @@
 				F29853C2293AD2B4005DB332 /* CapsuledText.swift in Sources */,
 				F29E550F2929B458008CEDD7 /* RecentLaunchView.swift in Sources */,
 				F29E552D2929C48D008CEDD7 /* Strings+Generated.swift in Sources */,
+				F241DA63293B9C60004E8F23 /* UpcomingLaunchVIew.swift in Sources */,
 				F29E551E2929B50D008CEDD7 /* Font+UIFont.swift in Sources */,
 				F2DBD9FF292054E20052D68F /* AppView.swift in Sources */,
 				F29E551B2929B509008CEDD7 /* FontStyleModifier.swift in Sources */,

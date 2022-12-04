@@ -41,6 +41,7 @@ internal enum Asset {
     internal static let rockets = ImageAsset(name: "rockets")
   }
   internal static let placeholderBackground = ImageAsset(name: "PlaceholderBackground")
+  internal static let placeholderBackground2 = ImageAsset(name: "PlaceholderBackground2")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
