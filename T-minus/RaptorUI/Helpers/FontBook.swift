@@ -4,17 +4,33 @@ import UIKit
 // MARK: - FontStyle
 
 public enum FontStyle: CaseIterable {
-    case title
+    case largeTitle
+    case title1
+    case title2
+    case title3
     case headline
     case body
+    case callout
+    case subhead
+    case footnote
+    case caption1
+    case caption2
 
     // MARK: Public
 
-    public var description: FontDescription {
+    fileprivate var description: FontDescription {
         switch self {
-            case .title: return FontDescription(font: .atkinsonHyperlegibleBold, size: 36, textStyle: .title1)
-            case .headline: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 30, textStyle: .headline)
-            case .body: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 16, textStyle: .body)
+            case .largeTitle: return FontDescription(font: .archivoMedium, size: 34, textStyle: .largeTitle)
+            case .title1: return FontDescription(font: .archivoMedium, size: 28, textStyle: .title1)
+            case .title2: return FontDescription(font: .archivoMedium, size: 22, textStyle: .title2)
+            case .title3: return FontDescription(font: .archivoMedium, size: 20, textStyle: .title3)
+            case .headline: return FontDescription(font: .archivoSemiBold, size: 17, textStyle: .headline)
+            case .body: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 17, textStyle: .body)
+            case .callout: return FontDescription(font: .archivoMedium, size: 16, textStyle: .callout)
+            case .subhead: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 15, textStyle: .subheadline)
+            case .footnote: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 13, textStyle: .footnote)
+            case .caption1: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 12, textStyle: .caption1)
+            case .caption2: return FontDescription(font: .atkinsonHyperlegibleRegular, size: 11, textStyle: .caption2)
         }
     }
     
@@ -33,7 +49,7 @@ public enum FontStyle: CaseIterable {
 
 // MARK: - FontDescription
 
-public struct FontDescription {
+fileprivate struct FontDescription {
     public let font: CustomFont
     public let size: CGFloat
     public let textStyle: UIFont.TextStyle
@@ -41,7 +57,7 @@ public struct FontDescription {
 
 // MARK: - CustomFont
 
-public enum CustomFont: CaseIterable {
+fileprivate enum CustomFont: CaseIterable {
     case archivoRegular
     case archivoMedium
     case archivoSemiBold
@@ -52,7 +68,7 @@ public enum CustomFont: CaseIterable {
 
     // MARK: - Public
 
-    public var fontName: String {
+    fileprivate var fontName: String {
         switch self {
             case .archivoRegular: return "Archivo-Regular"
             case .archivoMedium: return "Archivo-Medium"
@@ -66,7 +82,7 @@ public enum CustomFont: CaseIterable {
 
     // MARK: Internal
 
-    var fileName: String {
+    fileprivate var fileName: String {
         switch self {
             case .archivoRegular: return "Archivo-Regular"
             case .archivoMedium: return "Archivo-Medium"
@@ -82,7 +98,7 @@ public enum CustomFont: CaseIterable {
 
 // MARK: - FontBook
 
-struct FontBook {
+fileprivate struct FontBook {
 
     // MARK: - Lifecycle
 
@@ -90,19 +106,11 @@ struct FontBook {
         loadCustomFonts()
     }
 
-    // MARK: - Internal
+    // MARK: Private
 
-    static let shared = FontBook()
-
-    func font(for customFont: CustomFont, size: CGFloat) -> UIFont {
-        guard let customFont = UIFont(name: customFont.fontName, size: size) else {
-            assertionFailure("Unable to load preferred font")
-            return UIFont.systemFont(ofSize: size)
-        }
-        return customFont
-    }
+    fileprivate static let shared = FontBook()
     
-    func font(for fontStyle: FontStyle, scaleFontDynamically: Bool = true) -> UIFont {
+    fileprivate func font(for fontStyle: FontStyle, scaleFontDynamically: Bool = true) -> UIFont {
         guard let defaultFont = UIFont(name: fontStyle.description.font.fontName, size: fontStyle.description.size) else {
             assertionFailure("Unable to load preferred font")
             return UIFont.preferredFont(forTextStyle: fontStyle.description.textStyle)
@@ -112,9 +120,9 @@ struct FontBook {
         return scaledFont
     }
 
-    // MARK: Private
 
-    private func loadCustomFonts() {
+
+    fileprivate func loadCustomFonts() {
         for customFont in CustomFont.allCases {
             guard let url = Bundle.main.url(forResource: customFont.fileName, withExtension: "ttf"),
                   let data = try? Data(contentsOf: url),

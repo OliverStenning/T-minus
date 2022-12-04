@@ -8,7 +8,7 @@ struct AppView: View {
         UISegmentedControl.appearance().selectedSegmentTintColor = Asset.Colors.accentColor.color
         UISegmentedControl.appearance().backgroundColor = Asset.Colors.secondaryBackgroundColor.color
         UISegmentedControl.appearance().setTitleTextAttributes(
-            [.font: FontBook.shared.font(for: .archivoSemiBold, size: 14),
+            [.font: FontStyle.callout.uiFont,
             .foregroundColor: UIColor.white],
             for: .normal
         )
@@ -20,20 +20,17 @@ struct AppView: View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             TabView(selection: $selectedTab) {
                 UpcomingLaunchVIew()
-                    .tag(TabItems.upcoming)
+                    .tag(TabItem.upcoming)
                 
                 RecentLaunchView()
-                    .tag(TabItems.recent)
+                    .tag(TabItem.recent)
             }
+            .animation(.easeInOut, value: selectedTab)
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
-            Picker("", selection: $selectedTab) {
-                Text("Upcoming").tag(TabItems.upcoming)
-                Text("Recent").tag(TabItems.recent)
-            }
-            .pickerStyle(.segmented)
+            TabSelector(selectedTab: $selectedTab)
             .padding(.bottom, 32)
-            .padding(.horizontal, 32)
+            .padding(.horizontal, 48)
             
         }
         .background(Asset.Colors.backgroundColor.swiftUIColor)
@@ -42,12 +39,7 @@ struct AppView: View {
     
     // MARK: - Private
     
-    @State private var selectedTab: TabItems = .upcoming
-}
-
-private enum TabItems: Hashable {
-    case upcoming
-    case recent
+    @State private var selectedTab: TabItem = .upcoming
 }
 
 struct AppView_Previews: PreviewProvider {

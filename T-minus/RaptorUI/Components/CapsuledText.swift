@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CapsuledText: View {
     let text: String
-    let size: CGFloat
+    let font: Font
     
     var body: some View {
         HStack {
@@ -13,7 +13,7 @@ struct CapsuledText: View {
             
             Text(text)
                 .frame(maxHeight: .infinity)
-                .font(Font(uiFont: FontBook.shared.font(for: .archivoMedium, size: size)))
+                .font(font)
                 .foregroundColor(.white)
         }
         .fixedSize(horizontal: false, vertical: true)
@@ -23,6 +23,6 @@ struct CapsuledText: View {
 
 struct CapsuledText_Previews: PreviewProvider {
     static var previews: some View {
-        CapsuledText(text: "Starlink 4-35 (v1.5)", size: 32)
+        CapsuledText(text: "Starlink 4-35 (v1.5)", font: FontStyle.largeTitle.font)
     }
 }

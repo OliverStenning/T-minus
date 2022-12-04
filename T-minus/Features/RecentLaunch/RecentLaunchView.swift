@@ -21,14 +21,14 @@ public struct RecentLaunchView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 8) {
                     Spacer()
-                    CapsuledText(text: "Starlink 4-35 (v1.5)", size: 32)
+                    CapsuledText(text: "Starlink 4-35 (v1.5)", font: FontStyle.largeTitle.font)
                     Text("Falcon 9")
                         .foregroundColor(.white)
-                        .font(Font(uiFont: FontBook.shared.font(for: .archivoMedium, size: 24)))
+                        .font(FontStyle.title2.font)
                     
                     Text("28 Oct 2022, 14:00")
                         .foregroundColor(.init(white: 0.6))
-                        .font(Font(uiFont: FontBook.shared.font(for: .archivoRegular, size: 22)))
+                        .font(FontStyle.title2.font)
             
                 }
                 Spacer()
